@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="qJxZwrP9Y8Jt4AHMVJza" name="ページ1">
-        <mxGraphModel dx="1881" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2333" dy="1446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="13">
+                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2" target="13" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="240" y="720" as="targetPoint"/>
                         <Array as="points">
@@ -13,7 +13,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="11">
+                <mxCell id="21" value="" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="300" y="780" as="targetPoint"/>
                         <Array as="points">
@@ -23,7 +23,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="12">
+                <mxCell id="25" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="130" y="590" as="targetPoint"/>
                         <Array as="points">
@@ -33,7 +33,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="26" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="10">
+                <mxCell id="26" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="280" y="540" as="targetPoint"/>
                         <Array as="points">
@@ -42,7 +42,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="8">
+                <mxCell id="28" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="260" y="490" as="targetPoint"/>
                         <Array as="points">
@@ -51,7 +51,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="29" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+                <mxCell id="29" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="250" y="440" as="targetPoint"/>
                         <Array as="points">
@@ -60,37 +60,37 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="5">
+                <mxCell id="30" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="一覧ページ&lt;br&gt;（読書レビューと古本出品を並列）" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="2" value="一覧ページ&lt;br&gt;（読書記録と古本出品を並列）" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="10" y="325" width="200" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="ユーザー新規登録ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="4" value="ユーザー新規登録ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="400" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="ユーザーログインページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="5" value="ユーザーログインページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="340" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;span style=&quot;&quot;&gt;ユーザーマイページ&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="8" value="&lt;span style=&quot;&quot;&gt;ユーザーマイページ&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="460" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="読書レビュー投稿ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="10" value="読書記録投稿ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="520" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="古本出品ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="11" value="古本出品ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="640" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="12" target="14">
+                <mxCell id="31" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="12" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="読書レビュー詳細ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="12" value="読書記録詳細ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="580" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="13" target="15">
+                <mxCell id="32" style="edgeStyle=none;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="13" target="15" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="16">
+                <mxCell id="33" style="edgeStyle=none;rounded=0;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="13" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="500" y="810" as="targetPoint"/>
                         <Array as="points">
@@ -99,19 +99,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="13" value="古本詳細ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="13" value="古本詳細ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="300" y="700" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="読書レビュー編集ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="14" value="読書記録編集ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="550" y="580" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="古本編集ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="15" value="古本編集ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="550" y="700" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="古本購入ページ" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="16" value="古本購入ページ" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="550" y="770" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=none;rounded=0;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="11" target="11">
+                <mxCell id="22" style="edgeStyle=none;rounded=0;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="11" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>

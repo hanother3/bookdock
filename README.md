@@ -23,6 +23,7 @@
 | ------------------ | ---------- | ------------------------------ |
 | book_name          | string     | null: false                    |
 | category_id        | integer    | null: false                    |
+| read_status_id     | integer    | null: false                    |
 | book_review        | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
