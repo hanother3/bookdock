@@ -53,7 +53,7 @@
   margin-top: 5px;
   height: 48px;
   padding: 10px 16px 8px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   font-size: 16px;
@@ -86,7 +86,7 @@
   height: 48px;
   line-height: 30px;
   padding: 10px 16px 8px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   font-size: 14px;
@@ -103,7 +103,7 @@
   margin-top: 5px;
   height: 45px;
   padding-left: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   font-size: 12px;
@@ -132,7 +132,7 @@
 }
 
 .form-bottom-text>span {
-  color: #0099e8;
+  color: #7097C3;
   cursor: pointer;
 }
 
@@ -153,7 +153,7 @@
 
 .register-info {
   margin: 30px 180px 0 0;
-  color: #0099e8;
+  color: #7097C3;
   text-align: right;
   cursor: pointer;
 }
