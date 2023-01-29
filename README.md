@@ -22,7 +22,10 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | book_name          | string     | null: false                    |
-| category_id        | integer    | null: false                    |
+| author             | string     | null: false                    |
+| image_url          | string     | null: false                    |
+| publishd_date      | string     | null: false                    |
+| publisher          | string     | null: false                    |
 | read_status_id     | integer    | null: false                    |
 | book_review        | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
