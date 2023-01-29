@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2023_01_29_122105) do
     t.string "image_url", null: false
     t.string "publishd_date", null: false
     t.string "publisher", null: false
-    t.integer "read_status_id", null: false
+    t.integer "read_status_id"
     t.text "book_review", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

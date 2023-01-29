@@ -1,0 +1,85 @@
+<%= render "shared/header" %>
+
+<div class="books-contents">
+  <div class="books-main">
+    <h2 class="books-title">本の情報を入力</h2>
+    <%= form_with model: @book, url: books_path, local: true do |f| %>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <%# 商品画像 %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        書籍画像
+        <span class="indispensable">必須</span>
+      </div>
+      <%# <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"book-image" %>
+      <%# </div> %> 
+      <%= f.text_area :image_url, class:"books-image", id:"image_url", placeholder:"書影", maxlength:"40" %>
+    </div>
+    <%# /商品画像 %>
+
+    <%# 商品名と商品説明 %>
+    <div class="book-names">
+      <div class="weight-bold-text">
+        書名
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :book_name, class:"books-text", id:"book-name", placeholder:"書名", maxlength:"40" %>
+      <div class="books-explain">
+        <div class="weight-bold-text">
+          著者名
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :author, class:"books-text", id:"book-info", placeholder:"著者名" ,rows:"1" ,maxlength:"40" %>
+      </div>
+      <div class="books-explain">
+        <div class="weight-bold-text">
+          発売日
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :publishd_date, class:"books-text", id:"book-info", placeholder:"発売日" ,rows:"1" ,maxlength:"40" %>
+      </div>
+      <div class="books-explain">
+        <div class="weight-bold-text">
+          出版社
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :publisher, class:"books-text", id:"book-info", placeholder:"出版社" ,rows:"1" ,maxlength:"40" %>
+      </div>
+    </div>
+    <%# /商品名と商品説明 %>
+
+    <%# 本のレビュー %>
+    <div class="books-detail">
+      <div class="form">
+        <div class="weight-bold-text">
+          読書状況
+          <span class="indispensable">任意</span>
+        </div>
+        <%= f.text_area :read_status_id, class:"books-text", id:"book-info", placeholder:"読書状況" ,rows:"1" ,maxlength:"20" %>
+        <div class="weight-bold-text">
+          読書レビュー
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :book_review, class:"books-text", id:"book-info", placeholder:"読書レビュー" ,rows:"5" ,maxlength:"200" %>
+      </div>
+    </div>
+    <%# /本のレビュー %>
+
+
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+      <%= f.submit "出品する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+</div>
+
+<%= render "shared/footer" %>
