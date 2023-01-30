@@ -61,3 +61,4 @@ group :production do
 end
 
 gem 'devise'
+gem 'rakuten_web_service'
