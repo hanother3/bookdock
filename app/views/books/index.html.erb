@@ -22,11 +22,12 @@
       <li class='list'>
         <%= link_to book_path(book.id) do %>
         <div class='book-img-content'>
-          <%# <%= image_tag book.image, class: "book-img" %>
+          <%= image_tag book.image_url %>
         </div>
         <div class='book-info'>
           <h3 class='book-name'>
-            <%= book.book_name %>
+            <%= book.title %>
+            <%# <%= image_tag book.image_url %>
           </h3>
         </div>
         <% end %>
