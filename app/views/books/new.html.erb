@@ -1,0 +1,50 @@
+<%= render "shared/header" %>
+
+  <%= form_with model: @book, url:  books_path, method: :post, local: true do |f| %>
+  <%= render 'shared/error_messages', model: f.object %>
+
+
+  <%# 本のレビュー %>
+  <div class="books-contents">
+    <div class="books-detail">
+      <div class="form">
+        <%= image_tag @book.image_url %>
+        <div class="weight-bold-text">
+        <h2>タイトル</h2>
+          <span class="indispensable"></span>
+        </div>
+        <%= @book.title %>
+        <div class="weight-bold-text">
+        <h2>著者</h2>
+          <span class="indispensable"></span>
+        </div>
+        <%= @book.author %>
+        <div class="weight-bold-text">
+        <h2>読書状況</h2>
+          <span class="indispensable">任意</span>
+        </div>
+        <%= f.text_area :read_status_id, class:"books-text", id:"book-info", placeholder:"読書状況" ,rows:"1" ,maxlength:"20" %>
+        <div class="weight-bold-text">
+        <h2>読書レビュー</h2>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :book_review, class:"books-text", id:"book-info", placeholder:"読書レビュー" ,rows:"5" ,maxlength:"200" %>
+        <%= hidden_field_tag :isbn, @book.isbn %>
+        <%= hidden_field_tag :title, @book.title %>
+        <%= hidden_field_tag :author, @book.author %>
+        <%= hidden_field_tag :image_url, @book.image_url %>
+      </div>
+    </div>
+  <%# /本のレビュー %>
+    <%= f.submit "投稿する" ,class:"sell-btn" %> 
+
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+</div>
+
+<%= render "shared/footer" %>
