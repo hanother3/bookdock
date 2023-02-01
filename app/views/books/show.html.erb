@@ -20,13 +20,11 @@
     </div>
 
     <%# <% if user_signed_in? && @item.shopping.nil? %>
-      <%# <% if current_user.id == @item.user_id %>
-        <%# <%= link_to "商品の編集", edit_item_path(@item), method: :get, class: "item-red-btn" %> 
-        <%# <p class="or-text">or</p> %>
-        <%# <%= link_to "削除", item_path(@item), method: :delete, class:"item-destroy" %> 
-      <%# <% else %>
-      <%# <%= link_to "購入画面に進む", item_shoppings_path(@item), class:"item-red-btn"%> 
-      <%# <% end %> 
+      <% if current_user.id == @book.user_id %>
+        <%= link_to "レビューの編集", edit_book_path(@book), method: :get, class: "item-red-btn" %>
+        <p class="or-text">or</p>
+        <%= link_to "削除", book_path(@book), method: :delete, class:"item-destroy" %>
+      <% end %>
     <%# <% end %> 
 
     <table class="detail-table">
