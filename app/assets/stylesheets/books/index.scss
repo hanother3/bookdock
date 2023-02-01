@@ -44,7 +44,6 @@
 .book-contents>.subtitle {
   font-size: 3vh;
   margin: 1vh 0;
-  text-decoration: none;
   color: #a3856f;
   font-weight: bold;
 }
@@ -79,6 +78,10 @@
 
 .book-name {
   font-size: 2.5vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* //商品一覧 */
