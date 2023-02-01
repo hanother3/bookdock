@@ -1,0 +1,59 @@
+<%= render "shared/header" %>
+
+<%# 読書の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @book.title %>
+    </h2>
+    <div class="item-img-content">
+      <%# <%= link_to (image_tag(@book.image_url)), @book.item_url %> 
+      <%= image_tag @book.image_url,class:"item-box-img" %>
+    </div>
+    <div class="item-price-box">
+      <span class="item-price">
+        <%= @book.isbn %>
+      </span>
+      <span class="item-postage">
+        <%= @book.author %>
+      </span>
+    </div>
+
+    <%# <% if user_signed_in? && @item.shopping.nil? %>
+      <%# <% if current_user.id == @item.user_id %>
+        <%# <%= link_to "商品の編集", edit_item_path(@item), method: :get, class: "item-red-btn" %> 
+        <%# <p class="or-text">or</p> %>
+        <%# <%= link_to "削除", item_path(@item), method: :delete, class:"item-destroy" %> 
+      <%# <% else %>
+      <%# <%= link_to "購入画面に進む", item_shoppings_path(@item), class:"item-red-btn"%> 
+      <%# <% end %> 
+    <%# <% end %> 
+
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">読書状況</th>
+          <td class="detail-value"><%= @book.read_status_id %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">レビュー</th>
+          <td class="detail-value"><%= @book.book_review %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <%# /読書の概要 %>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+    </form>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

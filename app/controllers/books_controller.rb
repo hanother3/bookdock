@@ -17,8 +17,6 @@ class BooksController < ApplicationController
       redirect_to books_url, alert: e.message
   end
 
-
-
   def create
     @book = Book.new(book_params)
     if @book.save
@@ -28,8 +26,11 @@ class BooksController < ApplicationController
     end
   end
 
-  private
+  def show
+    @book = Book.find(params[:id])
+  end  
 
+  private
 
   def book_params
     params.require(:book).permit(
