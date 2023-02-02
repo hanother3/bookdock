@@ -47,21 +47,33 @@
       <li class='list'>
         <%= link_to old_book_path(old_book.id) do %>
         <div class='book-img-content'>
-          <%# <%= image_tag book.image_url,  class: "book-img" %> 
+          <%= image_tag old_book.image.variant(resize: '400x400'), class: "book-img" %>
         </div>
         <div class='book-info'>
           <h3 class='book-name'>
             <%= old_book.old_title %>
           </h3>
         </div>
+        <div class='book-info'>
+          <h3 class='book-name'>
+            <%= old_book.price %>
+          </h3>
+        </div>
         <% end %>
       </li>
       <% end %>
-
     </ul>
   </div>
-
   <%# /古本一覧 %>
+
+  <div class='ad-contents'>
+    <h2 class='service-title'>
+      読書か、出品か
+    </h2>
+    <p class='service-explain'>
+      いつかのあの本に出会えるかもしれません
+    </p>
+  </div>
 
 </div>
 <%= render "shared/footer" %>
