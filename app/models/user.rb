@@ -17,4 +17,5 @@ class User < ApplicationRecord
   validates :password, format: { with: VALID_PASSWORD_REGEX }
   
   has_many :books
+  has_many :old_books
 end
