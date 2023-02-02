@@ -8,10 +8,9 @@
     </h2>
     <div class="item-img-content">
       <%= link_to (image_tag(@book.image_url)), @book.item_url %>
-      <%# <%= image_tag @book.image_url,class:"item-box-img" %> 
     </div>
     <div class="item-price-box">
-      <span class="item-price">
+      <span class="item-postage">
         <%= @book.isbn %>
       </span>
       <span class="item-postage">
@@ -32,6 +31,10 @@
 
     <table class="detail-table">
       <tbody>
+        <tr>
+          <th class="detail-item">ユーザー</th>
+          <td class="detail-value"><%= @book.user.nickname %></td>
+        </tr>
         <tr>
           <th class="detail-item">読書状況</th>
           <td class="detail-value"><%= @book.read_status.name %></td>
