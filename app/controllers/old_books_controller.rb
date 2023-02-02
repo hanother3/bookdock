@@ -1,6 +1,5 @@
 class OldBooksController < ApplicationController
   def index
-    @old_books = OldBook.includes(:user).order('created_at DESC')
   end   
 
   def new

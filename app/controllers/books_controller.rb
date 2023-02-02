@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   def index
     @books = Book.includes(:user).order('created_at DESC')
+    @old_books = OldBook.includes(:user).order('created_at DESC')
   end
 
   def search

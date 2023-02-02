@@ -27,7 +27,6 @@
         <div class='book-info'>
           <h3 class='book-name'>
             <%= book.title %>
-            <%# <%= image_tag book.image_url %>
           </h3>
         </div>
         <% end %>
@@ -44,6 +43,21 @@
       古本一覧
     </div>
     <ul class='book-lists'>
+          <% @old_books.each do |old_book| %>
+      <li class='list'>
+        <%= link_to old_book_path(old_book.id) do %>
+        <div class='book-img-content'>
+          <%# <%= image_tag book.image_url,  class: "book-img" %> 
+        </div>
+        <div class='book-info'>
+          <h3 class='book-name'>
+            <%= old_book.old_title %>
+          </h3>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+
     </ul>
   </div>
 
