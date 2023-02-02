@@ -1,0 +1,19 @@
+.books-content {
+  background-color: #f8f8f8;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.books-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 2vh 0;
+}
+
+.item-list-area {
+  padding: 2vh
+}

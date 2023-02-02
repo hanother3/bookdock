@@ -1,31 +1,40 @@
 <%= render "shared/header" %>
 
-<div class="books-contents">
+<div class="books-content">
 <%= form_with model: @book, url: search_books_path, method: :get, local: true do |f| %>
 
   <%# 商品名と商品説明 %>
   <div class="books-main">
-    <h2 class="books-title">タイトルを検索</h2>
-      <div class="search-box">
+    <h2 class="books-title">
+      タイトルを検索
+    </h2>
+  <div class="search-box">
       <%= text_field_tag :keyword, "",  id: "book_search", name: "keyword", placeholder: "タイトルを入力してください", style: "width: 220px;"%><button title="検索" type="submit">検索</button>
       <% end %>
-      </div>
-
-  <%= form_with model: @book, url: new_book_path, method: :get, local: true do |f| %>
-  <%= render 'shared/error_messages', model: f.object %>
+    
+    <%= form_with model: @book, url: new_book_path, method: :get, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
 
     <div class="books-sub">
     <h2 class="books-title">検索結果</h2>
-        <div id='book_list'>
+      <div class='book-lists'>
         <% if @books.present? %>
         <% @books.each do |book| %>
           <div class="item-list-area">
             <%= link_to (image_tag(book.medium_image_url)), book.item_url %>
-            <%= book.title %>
-            <%= book.author %>
-            <%= book.publisher_name %>
-            <%= book.sales_date %>
-            <%= form_tag(new_book_path, method: :get) do %>
+            <h2 class='book-search'>
+              <%= book.title %>
+            </h2>
+            <h2 class='book-search'>
+              <%= book.author %>
+            </h2>  
+            <h2 class='book-search'> 
+              <%= book.publisher_name %>
+            </h2>
+            <h2 class='book-search'>  
+              <%= book.sales_date %>
+            </h2>  
+              <%= form_tag(new_book_path, method: :get) do %>
               <%= hidden_field_tag :isbn, book.isbn %>
               <%= hidden_field_tag :title, book.title %>
               <%= hidden_field_tag :author, book.author %>
@@ -37,8 +46,9 @@
           </div> 
           <% end %>     
         <% end %>
-        </div>
       </div>
+    </div>
+  </div>
   <%# /商品名と商品説明 %>
 
     <%# 下部ボタン %>
