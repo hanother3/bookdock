@@ -37,7 +37,7 @@
 
 | Column               | Type       | Options                        |
 | ------------------   | ---------- | ------------------------------ |
-| old_book_name        | string     | null: false                    |
+| old_title            | string     | null: false                    |
 | old_book_description | text       | null: false                    |
 | category_id          | integer    | null: false                    |
 | book_condition_id    | integer    | null: false                    |

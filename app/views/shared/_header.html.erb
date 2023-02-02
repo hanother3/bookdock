@@ -8,7 +8,7 @@
   <div class='nav'>
     <ul class='lists-left'>
       <li><%= link_to '読書投稿', search_books_path, class: "bookrog-list" %></li>
-      <li><%= link_to '古本出品', "#", class: "old_books-list" %></li>
+      <li><%= link_to '古本出品', new_old_book_path, class: "old_books-list" %></li>
     </ul>
     <ul class='lists-right'>
     <% if user_signed_in? %>
