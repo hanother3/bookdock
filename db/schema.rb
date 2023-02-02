@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_29_122105) do
+ActiveRecord::Schema.define(version: 2023_02_02_065411) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "isbn", null: false
@@ -25,6 +25,21 @@ ActiveRecord::Schema.define(version: 2023_01_29_122105) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_books_on_user_id"
+  end
+
+  create_table "old_books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "old_title", null: false
+    t.text "old_book_description", null: false
+    t.integer "category_id", null: false
+    t.integer "book_condition_id", null: false
+    t.integer "delivery_charge_id", null: false
+    t.integer "area_id", null: false
+    t.integer "delivery_time_id", null: false
+    t.integer "price", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_old_books_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -46,4 +61,5 @@ ActiveRecord::Schema.define(version: 2023_01_29_122105) do
   end
 
   add_foreign_key "books", "users"
+  add_foreign_key "old_books", "users"
 end

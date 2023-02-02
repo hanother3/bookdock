@@ -1,0 +1,2 @@
+class OldBook < ApplicationRecord
+end
