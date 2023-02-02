@@ -1,6 +1,6 @@
 <%= render "shared/header" %>
 
-<div class="books-content">
+<div class="books-contents">
 <%= form_with model: @book, url: search_books_path, method: :get, local: true do |f| %>
 
   <%# 商品名と商品説明 %>

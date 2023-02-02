@@ -30,15 +30,15 @@
         </div>
         <%= @book.publisher %>
         <div class="weight-bold-text">
-        <h2>読書状況</h2>
-          <span class="indispensable">必須</span>
+          <h2>読書状況</h2>
+          <span class="indispensable"></span>
         </div>
         <%= f.collection_select(:read_status_id, ReadStatus.all, :id, :name, {}, {class:"genre-select"}) %>
         <div class="weight-bold-text">
-        <h2>読書レビュー</h2>
-          <span class="indispensable">必須</span>
+          <h2>読書レビュー</h2>
+          <span class="indispensable"></span>
         </div>
-        <%= f.text_area :book_review, class:"books-text", id:"book-info", placeholder:"読書レビュー" ,rows:"5" ,maxlength:"200" %>
+        <%= f.text_area :book_review, class:"items-text", id:"book-info", placeholder:"読書レビュー" ,rows:"7" ,maxlength:"1000" %>
         <%= hidden_field_tag :isbn, @book.isbn %>
         <%= hidden_field_tag :title, @book.title %>
         <%= hidden_field_tag :author, @book.author %>
