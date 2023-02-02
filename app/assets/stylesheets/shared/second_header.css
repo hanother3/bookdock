@@ -2,10 +2,14 @@
   width: 100%;
   min-width: 800px;
   height: 130px;
-  background-color: #f5f5f5;
+  background-color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 
+.bookdock-icon {
+  width: 12vw;
+  margin-right: 12vw;
+}

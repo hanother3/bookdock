@@ -5,6 +5,7 @@
 
 .title-contents {
   width: 100vw;
+  background-image: image-url('tundoku.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -18,7 +19,7 @@
 }
 
 .service-title {
-  font-size: 6vh;
+  font-size: 8vh;
 }
 
 .service-explain {
@@ -66,8 +67,8 @@
 }
 
 .book-img {
-  width: 33vh;
-  height: 33vh;
+  width: 150px;
+  height: 200px;
 }
 
 .book-info {
@@ -77,7 +78,7 @@
 }
 
 .book-name {
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 a {
