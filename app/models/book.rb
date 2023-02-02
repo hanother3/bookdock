@@ -6,5 +6,10 @@ class Book < ApplicationRecord
     validates :book_review
   end  
 
+  validates :read_status_id, numericality: { other_than: 1 , message: "can't be blank"} 
+
   belongs_to :user
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :read_status
 end

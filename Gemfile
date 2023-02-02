@@ -62,3 +62,4 @@ end
 
 gem 'devise'
 gem 'rakuten_web_service'
+gem 'active_hash'

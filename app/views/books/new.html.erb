@@ -33,7 +33,7 @@
         <h2>読書状況</h2>
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :read_status_id, class:"books-text", id:"book-info", placeholder:"未読 or 既読" ,rows:"1" ,maxlength:"20" %>
+        <%= f.collection_select(:read_status_id, ReadStatus.all, :id, :name, {}, {class:"genre-select"}) %>
         <div class="weight-bold-text">
         <h2>読書レビュー</h2>
           <span class="indispensable">必須</span>
