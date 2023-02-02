@@ -7,8 +7,8 @@
       <%= @book.title %>
     </h2>
     <div class="item-img-content">
-      <%# <%= link_to (image_tag(@book.image_url)), @book.item_url %> 
-      <%= image_tag @book.image_url,class:"item-box-img" %>
+      <%= link_to (image_tag(@book.image_url)), @book.item_url %>
+      <%# <%= image_tag @book.image_url,class:"item-box-img" %> 
     </div>
     <div class="item-price-box">
       <span class="item-price">
@@ -16,6 +16,9 @@
       </span>
       <span class="item-postage">
         <%= @book.author %>
+      </span>
+      <span class="item-postage">
+        <%= @book.publisher %>
       </span>
     </div>
 
