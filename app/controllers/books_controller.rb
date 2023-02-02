@@ -11,7 +11,7 @@ class BooksController < ApplicationController
   end
 
   def new
-      @book = Book.new(isbn: params[:isbn], title: params[:title], author: params[:author], image_url: params[:image_url])
+      @book = Book.new(isbn: params[:isbn], title: params[:title], author: params[:author], publisher: params[:publisher], image_url: params[:image_url], item_url: params[:item_url])
       @books = RakutenWebService::Books::Book.search(title: params[:keyword]) if params[:keyword].present?
     rescue StandardError => e
       redirect_to books_url, alert: e.message
@@ -54,7 +54,7 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(
       :title, :author, :image_url, :publishd_date, :publisher, :read_status_id, :book_review
-  ).merge(user_id: current_user.id, isbn: params[:isbn], title: params[:title],  author: params[:author], image_url: params[:image_url])
+  ).merge(user_id: current_user.id, isbn: params[:isbn], title: params[:title],  author: params[:author], publisher: params[:publisher], image_url: params[:image_url], item_url: params[:item_url])
   end
 
 end
