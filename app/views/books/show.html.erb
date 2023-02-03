@@ -2,23 +2,27 @@
 
 <%# 読書の概要 %>
 <div class="item-show">
-  <div class="item-box">
-    <h2 class="name">
-      <%= @book.title %>
-    </h2>
+  <div class="item-box">    
     <div class="item-img-content">
       <%= link_to (image_tag(@book.image_url)), @book.item_url %>
     </div>
     <div class="item-price-box">
       <span class="item-postage">
-        <%= @book.isbn %>
+        <h2>タイトル</h2>
       </span>
+      <%= @book.title %>
       <span class="item-postage">
-        <%= @book.author %>
+        <h2>ISBN</h2>
       </span>
+      <%= @book.isbn %>
       <span class="item-postage">
-        <%= @book.publisher %>
+        <h2>著者</h2>
       </span>
+      <%= @book.author %>
+      <span class="item-postage">
+        <h2>出版社</h2>
+      </span>
+      <%= @book.publisher %>
     </div>
 
     <%# <% if user_signed_in? && @item.shopping.nil? %>

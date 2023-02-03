@@ -5,13 +5,14 @@
   flex-direction: column;
   align-items: center;
   padding: 5vh 0;
+  text-align: center;
 }
 
 .item-box {
   background-color: #FFF;
   width: 70vw;
   min-width: 1200px;
-  padding: 10vh 15vw;
+  padding: 5vh 15vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +20,6 @@
 
 .item-box>.name {
   text-align: center;
-  font-weight: bold;
-  font-size: 25px;
 }
 
 .item-box-img {
@@ -44,7 +43,9 @@
 }
 
 .item-price-box>.item-postage {
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 2vh 0;
 }
 
 
@@ -55,7 +56,7 @@
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
-  padding: 2vh 10vw;
+  padding: 2vh 6vw;
 }
 
 .or-text {
@@ -68,7 +69,7 @@
   font-size: 24px;
   color: black;
   margin: 20px 0px;
-  padding: 2vh 10vw;
+  padding: 2vh 6vw;
 }
 
 .item-explain-box {
@@ -79,7 +80,7 @@
 
 .detail-table {
   margin-bottom: 30px;
-  width: 100%;
+  width: 60%;
 }
 
 .detail-item {
