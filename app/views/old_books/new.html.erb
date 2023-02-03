@@ -1,6 +1,8 @@
-<div class="items-sell-contents">
+<%= render "shared/header" %>
+
+<div class="books-contents">
   <div class="items-sell-main">
-    <h2 class="items-sell-title">商品の情報を入力</h2>
+    <h2 class="weight-bold-text">商品の情報を入力</h2>
     <%= form_with model: @old_book, url: old_books_path, local: true do |f| %>
 
     <%= render 'shared/error_messages', model: f.object %>
@@ -128,3 +130,5 @@
     </ul>
   </footer>
 </div>
+
+<%= render "shared/footer" %>
