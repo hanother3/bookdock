@@ -15,6 +15,16 @@ class OldBooksController < ApplicationController
     end
   end
 
+  def show
+    @old_book = OldBook.find(params[:id])
+  end  
+
+  def edit
+    @old_book = OldBook.find(params[:id])
+  end  
+
+  
+
   private
 
   def old_book_params
