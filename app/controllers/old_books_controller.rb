@@ -23,7 +23,15 @@ class OldBooksController < ApplicationController
     @old_book = OldBook.find(params[:id])
   end  
 
-  
+  def update
+    @old_book = OldBook.find(params[:id])
+    if @old_book.update(old_book_params)
+      redirect_to old_book_path(@old_book)
+    else
+      render :edit
+    end
+  end    
+
 
   private
 
