@@ -32,6 +32,11 @@ class OldBooksController < ApplicationController
     end
   end    
 
+  def destroy
+    @old_book = OldBook.find(params[:id])
+    @old_book.destroy
+    redirect_to root_path
+  end
 
   private
 
