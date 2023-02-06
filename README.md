@@ -32,7 +32,7 @@ https://bookdock.onrender.com/
 # 洗い出した要件
 https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f-EY/edit#gid=1785908763
 
-# 実装した機能についての画像や　GIFおよびその説明
+# 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/40fc5f30eeeec25324c8dabf1581fc49.gif)](https://gyazo.com/40fc5f30eeeec25324c8dabf1581fc49)
 
 [![Image from Gyazo](https://i.gyazo.com/fbaade08b43a90d3e6028f69c5e4271e.gif)](https://gyazo.com/fbaade08b43a90d3e6028f69c5e4271e)
