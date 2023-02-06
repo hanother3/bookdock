@@ -8,9 +8,44 @@ bookdock
 https://bookdock.onrender.com/
 
 # テスト用アカウント
-ユーザー名 root
++ ユーザー名: root
 
-Basic認証パスワード 8787
++ Basic認証パスワード: 8787
+
++ メールアドレス: test@test.com
+
++ パスワード: 111111q
+
+# 利用方法
+
+## 読書投稿
+1. トップページ（一覧ページ）のヘッダーからユーザー新規登録を行う
+2. 読書投稿ボタンを押し、検索画面へ遷移。タイトルを入力し、検索結果から該当の本を選択する
+3. 書影・タイトル・ISBN・著者・出版社は自動で入力されるので、残りの読書状況・読書レビューを入力し投稿する
+
+## 古本出品
+1. 一覧ページから古本出品ボタンを押し、画像ファイルと必要事項を入力し、出品する
+
+# アプリケーションを作成した背景
+自分の経験と家族・ネットの情報収集から「読まない本（積読本）がたまってしまう」という課題が判明した。課題と他の読書アプリを分析した結果、読書状況の管理および読書習慣の継続だけでは根本的な解決にならないと感じた。一つのアプリの中で、読書管理と古本出品ができることで、課題を解決に導くと判断し、本アプリケーションを開発することにした。
+
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f-EY/edit#gid=1785908763
+
+# 実装した機能についての画像や　GIFおよびその説明
+[![Image from Gyazo](https://i.gyazo.com/40fc5f30eeeec25324c8dabf1581fc49.gif)](https://gyazo.com/40fc5f30eeeec25324c8dabf1581fc49)
+
+[![Image from Gyazo](https://i.gyazo.com/fbaade08b43a90d3e6028f69c5e4271e.gif)](https://gyazo.com/fbaade08b43a90d3e6028f69c5e4271e)
+
+# 実装予定の機能
+現在、購入機能を実装中。
+今後は、マイページ機能を実装予定。
+
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac.png)](https://gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac)
+
+# 画面遷移図	
+[![Image from Gyazo](https://i.gyazo.com/2a3d06bacf7d97bfc53b3bcd59e468e9.png)](https://gyazo.com/2a3d06bacf7d97bfc53b3bcd59e468e9)
 
 ## usersテーブル
 
@@ -35,11 +70,12 @@ Basic認証パスワード 8787
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| book_name          | string     | null: false                    |
-| author             | string     | null: false                    |
-| image_url          | string     | null: false                    |
-| publishd_date      | string     | null: false                    |
-| publisher          | string     | null: false                    |
+| isbn               | string     | null: false                    |
+| title              | string     |                                |
+| author             | string     |                                |
+| publisher          | string     |                                |
+| image_url          | string     |                                |
+| item_url           | string     |                                |
 | read_status_id     | integer    | null: false                    |
 | book_review        | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
