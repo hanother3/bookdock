@@ -1,3 +1,17 @@
+# アプリケーション名
+bookdock
+
+# アプリケーション概要
+読書レビューを投稿し、既読or未読の読書状況を管理。読まなくなった本は古本として出品し、ユーザー同士で購入することができる。
+
+# URL
+https://bookdock.onrender.com/
+
+# テスト用アカウント
+ユーザー名 root
+
+Basic認証パスワード 8787
+
 ## usersテーブル
 
 | Column             | Type   | Options                    |
