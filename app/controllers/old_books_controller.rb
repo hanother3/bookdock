@@ -1,4 +1,7 @@
 class OldBooksController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_old_book, only: [:show, :edit, :update, :destroy]
+
   def index
   end   
 
@@ -16,15 +19,12 @@ class OldBooksController < ApplicationController
   end
 
   def show
-    @old_book = OldBook.find(params[:id])
   end  
 
   def edit
-    @old_book = OldBook.find(params[:id])
   end  
 
   def update
-    @old_book = OldBook.find(params[:id])
     if @old_book.update(old_book_params)
       redirect_to old_book_path(@old_book)
     else
@@ -33,7 +33,6 @@ class OldBooksController < ApplicationController
   end    
 
   def destroy
-    @old_book = OldBook.find(params[:id])
     @old_book.destroy
     redirect_to root_path
   end
@@ -44,6 +43,10 @@ class OldBooksController < ApplicationController
     params.require(:old_book).permit(
       :image, :old_title, :old_book_description, :category_id, :book_condition_id, :delivery_charge_id, :area_id, :delivery_time_id, :price
     ).merge(user_id: current_user.id)
+  end
+
+  def set_old_book
+    @old_book = OldBook.find(params[:id])
   end
 
 end
