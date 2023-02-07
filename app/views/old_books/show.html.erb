@@ -23,7 +23,7 @@
       </span>
     </div>
 
-    <%# <% if user_signed_in? && @item.shopping.nil? %>
+    <% if user_signed_in? %>
       <% if current_user.id == @old_book.user_id %>
         <%= link_to "商品の編集", edit_old_book_path(@old_book), method: :get, class: "item-red-btn" %>
         <p class="or-text">or</p>
@@ -31,7 +31,7 @@
       <% else %>
       <%# <%= link_to "購入画面に進む", item_shoppings_path(@item), class:"item-red-btn"%> 
       <% end %>
-    <%# <% end %> 
+    <% end %> 
 
     <div class="item-explain-box">
       <span><%= @old_book_description %></span>
