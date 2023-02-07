@@ -18,4 +18,5 @@ class User < ApplicationRecord
   
   has_many :books
   has_many :old_books
+  has_many :orders
 end
