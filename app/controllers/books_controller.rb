@@ -1,4 +1,7 @@
 class BooksController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show, :search]
+  before_action :set_book, only: [:show, :edit, :update, :destroy]
+
   def index
     @books = Book.includes(:user).order('created_at DESC')
     @old_books = OldBook.includes(:user).order('created_at DESC')
@@ -28,15 +31,12 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find(params[:id])
   end  
 
   def edit
-    @book = Book.find(params[:id])
   end  
 
   def update
-    @book = Book.find(params[:id])
     if @book.update(book_params)
       redirect_to book_path(@book)
     else
@@ -45,7 +45,6 @@ class BooksController < ApplicationController
   end    
 
   def destroy
-    @book = Book.find(params[:id])
     @book.destroy
     redirect_to root_path
   end
@@ -56,6 +55,10 @@ class BooksController < ApplicationController
     params.require(:book).permit(
       :title, :author, :image_url, :publishd_date, :publisher, :read_status_id, :book_review
   ).merge(user_id: current_user.id, isbn: params[:isbn], title: params[:title],  author: params[:author], publisher: params[:publisher], image_url: params[:image_url], item_url: params[:item_url])
+  end
+
+  def set_book
+    @book = Book.find(params[:id])
   end
 
 end
