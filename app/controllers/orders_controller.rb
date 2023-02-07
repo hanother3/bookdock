@@ -1,5 +1,31 @@
 class OrdersController < ApplicationController
+
+  before_action :set_pay, only: [:index, :create]
+
   def index
+    @order_address = OrderAddress.new
+  end
+
+  def create
+    @order_address = OrderAddress.new(order_params)
+    if @order_address.valid?
+      @order_address.save
+      redirect_to root_path
+    else
+      render :index
+    end
+  end
+
+  private
+
+  def order_params
+    params.require(:order_address).permit(:postal_code, :area_id, :city, :house_number, :phone_number, :building_name, :price).merge(
+      old_book_id: @old_book.id, user_id: current_user.id, token: params[:token]
+    )
+  end
+
+  def set_pay
     @old_book = OldBook.find(params[:old_book_id])
   end
+
 end
