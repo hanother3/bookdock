@@ -48,6 +48,11 @@
         <%= link_to old_book_path(old_book.id) do %>
         <div class='book-img-content'>
           <%= image_tag old_book.image.variant(resize: '400x400'), class: "book-img" %>
+          <%if old_book.order.present?%>
+          <div class='sold-out'>
+            <span>Sold Out!!</span>
+          </div>
+          <%end%>
         </div>
         <div class='book-info'>
           <h3 class='book-name'>
