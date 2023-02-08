@@ -8,7 +8,7 @@ bookdock
 https://bookdock.onrender.com/
 
 # テスト用アカウント
-+ ユーザー名: root
++ Basic認証ユーザー名: root
 
 + Basic認証パスワード: 8787
 
