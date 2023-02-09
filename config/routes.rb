@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :old_books do
     resources :orders, only: [:index, :create]
   end
+  resources :users, only: :show
 end
