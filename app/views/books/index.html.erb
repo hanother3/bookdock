@@ -28,6 +28,7 @@
           <h3 class='book-name'>
             <%= book.title %>
           </h3>
+          <span>投稿者</span><%= book.user.nickname %>
         </div>
         <% end %>
       </li>
@@ -61,6 +62,7 @@
           <h3 class='book-price'>
             <%= old_book.price %>円<br>
           </h3>
+          <span>出品者</span><%= old_book.user.nickname %>
         </div>
         <% end %>
       </li>
