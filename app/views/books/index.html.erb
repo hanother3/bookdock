@@ -28,7 +28,9 @@
           <h3 class='book-name'>
             <%= book.title %>
           </h3>
-          <span>投稿者</span><%= book.user.nickname %>
+          <a href="/users/<%= book.user.id %>">
+            <span>投稿者</span><%= book.user.nickname %>
+          </a>
         </div>
         <% end %>
       </li>
@@ -62,7 +64,9 @@
           <h3 class='book-price'>
             <%= old_book.price %>円<br>
           </h3>
-          <span>出品者</span><%= old_book.user.nickname %>
+          <a href="/users/<%= old_book.user.id %>">
+            <span>出品者</span><%= old_book.user.nickname %>
+          </a>
         </div>
         <% end %>
       </li>
