@@ -49,6 +49,14 @@
   font-weight: bold;
 }
 
+.book-bar {
+  font-size: 2vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .book-lists {
   width: 100vw;
   display: flex;
