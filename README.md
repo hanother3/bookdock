@@ -39,7 +39,10 @@ https://bookdock.onrender.com/
    有効期限: 333
    
    cvc: 123
-3. 住所情報を入力し、購入ボタンを押す   
+3. 住所情報を入力し、購入ボタンを押す 
+
+## マイページ
+1. 一覧ページから投稿者名をクリック。３つのタブを切り替えることで、自身の読書投稿（既読）、読書投稿（未読）、古本出品を管理できる
 
 # アプリケーションを作成した背景
 自分の経験と家族・ネットの情報収集から「読まない本（積読本）がたまってしまう」という課題が判明した。課題と他の読書アプリを分析した結果、読書状況の管理および読書習慣の継続だけでは根本的な解決にならないと感じた。一つのアプリの中で、読書管理と古本出品ができることで、課題を解決に導くと判断し、本アプリケーションを開発することにした。
@@ -49,6 +52,8 @@ https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f
 
 # 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/40fc5f30eeeec25324c8dabf1581fc49.gif)](https://gyazo.com/40fc5f30eeeec25324c8dabf1581fc49)
+
+[![Image from Gyazo](https://i.gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4.gif)](https://gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4)
 
 [![Image from Gyazo](https://i.gyazo.com/fbaade08b43a90d3e6028f69c5e4271e.gif)](https://gyazo.com/fbaade08b43a90d3e6028f69c5e4271e)
 
