@@ -2,13 +2,19 @@
 
 <div class='main'>
 
-  <%# 読書一覧 %>
-  <div class='book-contents'>
-    <div class="subtitle" >
-      <%= @nickname %>さんの読書投稿一覧
-    </div>
+<!-- タブ -->
+<ul class="tab-list">
+  <li class="tab-list-item active">読書投稿（既読）</li>
+  <li class="tab-list-item">読書投稿（未読）</li>
+  <li class="tab-list-item">古本出品</li>
+</ul>
+
+<!-- タブコンテンツ 　-->
+<div class="tab-contents">
+  <div class="tab-contents-item show">
+    <%= @nickname %>さんの読書投稿一覧（既読）
     <ul class='book-lists'>
-      <% @books.each do |book| %>
+      <% @books_read.each do |book| %>
       <li class='list'>
         <%= link_to book_path(book.id) do %>
         <div class='book-img-content'>
@@ -24,14 +30,31 @@
       <% end %>
     </ul>
   </div>
-  <%# /読書一覧 %>
 
-  <%# /古本一覧 %>
-  <div class='book-contents'>
-    <div class="subtitle" >
-      <%= @nickname %>さんの古本出品一覧
-    </div>
+  <div class="tab-contents-item">
+    <%= @nickname %>さんの読書投稿一覧（未読）
     <ul class='book-lists'>
+      <% @books_unread.each do |book| %>
+      <li class='list'>
+        <%= link_to book_path(book.id) do %>
+        <div class='book-img-content'>
+          <%= image_tag book.image_url,  class: "book-img" %>
+        </div>
+        <div class='book-info'>
+          <h3 class='book-name'>
+            <%= book.title %>
+          </h3>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+
+  </div>
+
+  <div class="tab-contents-item">
+    <%= @nickname %>さんの古本出品一覧
+        <ul class='book-lists'>
           <% @old_books.each do |old_book| %>
       <li class='list'>
         <%= link_to old_book_path(old_book.id) do %>
@@ -56,7 +79,7 @@
       <% end %>
     </ul>
   </div>
-  <%# /古本一覧 %>
+</div>
 
 </div>
 <%= render "shared/footer" %>
