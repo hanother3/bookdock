@@ -58,7 +58,7 @@ https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f
 [![Image from Gyazo](https://i.gyazo.com/fbaade08b43a90d3e6028f69c5e4271e.gif)](https://gyazo.com/fbaade08b43a90d3e6028f69c5e4271e)
 
 # 実装予定の機能
-今後は、タブで管理するマイページ機能を実装予定。
+
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac.png)](https://gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac)
