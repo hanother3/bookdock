@@ -1,6 +1,7 @@
 class OldBooksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_old_book, only: [:show, :edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :destroy]
 
   def index
   end   
@@ -47,6 +48,10 @@ class OldBooksController < ApplicationController
 
   def set_old_book
     @old_book = OldBook.find(params[:id])
+  end
+
+  def contributor_confirmation
+    redirect_to root_path unless current_user == @old_book.user
   end
 
 end

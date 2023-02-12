@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show, :search]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :destroy]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
@@ -59,6 +60,10 @@ class BooksController < ApplicationController
 
   def set_book
     @book = Book.find(params[:id])
+  end
+
+  def contributor_confirmation
+    redirect_to root_path unless current_user == @book.user
   end
 
 end

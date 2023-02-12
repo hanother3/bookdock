@@ -1,8 +1,9 @@
 class OrdersController < ApplicationController
-
+  before_action :authenticate_user!
   before_action :set_pay, only: [:index, :create]
 
   def index
+    redirect_to root_path if current_user == @old_book.user || @old_book.order.present?
     @order_address = OrderAddress.new
   end
 
