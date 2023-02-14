@@ -31,6 +31,10 @@
           <a href="/users/<%= book.user.id %>">
             <span>投稿者</span><%= book.user.nickname %>
           </a>
+          <div class='star-btn'>
+            <%= image_tag "star.png", class:"star-icon" %>
+            <span class='star-count'>0</span>
+          </div>
         </div>
         <% end %>
       </li>
