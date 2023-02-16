@@ -1,0 +1,5 @@
+<%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+  <%= link_to book_favorites_path(book), method: :post, remote: true do %>
+  <%= book.favorites.count %>いいね
+  <% end %>
+</div>
