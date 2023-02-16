@@ -21,6 +21,9 @@
       <span class="item-postage">
         <%= @old_book.delivery_charge.name %>
       </span>
+      <span class="item-postage">
+        <%= @old_book.old_book_description %>
+      </span>
     </div>
 
     <% if user_signed_in? && @old_book.order.nil? %>

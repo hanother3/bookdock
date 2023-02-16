@@ -22,3 +22,11 @@
   font-size: 16px;
   resize: none;
 }
+
+.sell-btn-contents {
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
