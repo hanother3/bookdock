@@ -1,5 +1,17 @@
-<%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-  <%= link_to book_favorites_path(book), method: :post, remote: true do %>
-  <%= book.favorites.count %>いいね
+
+<%# <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+<% if user_signed_in? %>
+  <% if book.favorited?(current_user) %>
+  <%= link_to book_favorites_path(book), method: :delete, remote: true do %>
+    ♥<%= book.favorites.count %>いいね
+    <% end %>
+  <% else %>
+    <%= link_to book_favorites_path(book), method: :post, remote: true do %>
+    ♡<%= book.favorites.count %>いいね
+    <% end %>
   <% end %>
-</div>
+<% else %>
+  <%= link_to new_user_session_path do %>
+    ♡<%= book.favorites.count %>いいね
+  <% end %>
+<% end %>
