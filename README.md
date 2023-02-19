@@ -58,10 +58,9 @@ https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f
 [![Image from Gyazo](https://i.gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4.gif)](https://gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4)
 
 3. いいね機能（非同期通信）
-
+[![Image from Gyazo](https://i.gyazo.com/61a4ba03d2371e56e2c855e79dc3f65b.gif)](https://gyazo.com/61a4ba03d2371e56e2c855e79dc3f65b)
 
 # 実装予定の機能
-
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac.png)](https://gyazo.com/0f46a4ccb58135e0bf8c6ae91c2d42ac)
