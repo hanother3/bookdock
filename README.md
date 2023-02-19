@@ -51,11 +51,14 @@ https://bookdock.onrender.com/
 https://docs.google.com/spreadsheets/d/1NWwzEtkrGUgXfKbkrtg8B_8T6qD7lQ-Syg90AJ9f-EY/edit#gid=1785908763
 
 # 実装した機能についての画像やGIFおよびその説明
+1. 楽天APIからの書籍データ取得と保存
 [![Image from Gyazo](https://i.gyazo.com/40fc5f30eeeec25324c8dabf1581fc49.gif)](https://gyazo.com/40fc5f30eeeec25324c8dabf1581fc49)
 
+2. マイページ（JavaScriptでタブ切替）
 [![Image from Gyazo](https://i.gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4.gif)](https://gyazo.com/2cc0a53397282e6b7f78db9f01aabbe4)
 
-[![Image from Gyazo](https://i.gyazo.com/fbaade08b43a90d3e6028f69c5e4271e.gif)](https://gyazo.com/fbaade08b43a90d3e6028f69c5e4271e)
+3. いいね機能（非同期通信）
+
 
 # 実装予定の機能
 
